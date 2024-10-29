@@ -29,7 +29,7 @@ const init = async () => {
     if (response instanceof InputError) {
       const newResponse = h.response({
         status: "fail",
-        message: `${response.message} Silahkan gunakan foto lain`,
+        message: "Terjadi kesalahan dalam melakukan prediksi",
       });
 
       // Make sure statusCode is an integer, default to 400 if undefined
